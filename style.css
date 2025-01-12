@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Leckerli+One&family=Moirai+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Bubbles&family=Rubik+Puddles&display=swap');
+
+:root {
+    --violeta-dos: #480c6d;
+    --morado-uva: #512B76ff;
+    --violeta: #290D3Dff;
+    --lapis-lazuli: #185E9Eff;
+    --color-morado-oscuro: #370E52ff;
+    --color-de-fondo: #FBDCF7ff;
+    --color-claro: #b690db;
+    --destaque: #92bdeb;
+}
+
+
+
+*{
+    padding: 0;
+    margin:0;
+}
+
+body {
+    background-color: var(--violeta-dos);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-morado-oscuro);
+}
+
+.ico{
+    color:var(--violeta-dos)
+}
+
+/* ------------------------------ Sección Menú -------------------------------*/
+strong {
+    font-size: 1.4rem;
+    font-family: "Krona One", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--destaque);
+}
+.cabecera {
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: #bea4d8;
+    height: 1.3rem;
+    position: relative;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    opacity: 90%;
+    border-radius: 0 0 20% 10%;
+}
+.cabecera__titulo {
+    font-size: 0.2rem;
+    text-align: center;
+    padding-left: 2rem;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+}
+
+.navegacion{
+    margin-right: 4rem;
+}
+
+.navegacion__lista {    
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-style: normal;
+    display: none;
+    margin:0;
+}
+
+::-webkit-scrollbar:horizontal {
+    display:none;
+}
+
+ul.navegacion__lista li{
+    padding-left: 1.2rem;
+    box-sizing: 2px;
+}
+
+a{
+    box-shadow: inset 0 0 0 0 #000000;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+a:hover{
+    color: white;
+    opacity: 90%;
+}
+
+.navegacion__elemento a {
+    font-size: 0.9rem;
+}
+
+
+/* ------------------------------ Sección Presentación ------------------------------*/
+.titulo__presentacion{
+    font-size: 1.6rem;
+    font-family: "Krona One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+   
+}
+.presentacion{
+    padding-top:  6rem;
+    display:flex;
+    flex-direction: row;
+    gap: 6rem;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3rem;
+    background-image: 
+    linear-gradient(to bottom, rgba(72, 12, 109, 0) 75%, #480c6d 100%),
+    url('assets/fondo-geometrico.png');
+    color:var(--color-de-fondo);
+    height: 74vh;
+    margin: 0;      
+    color:var(--color-de-fondo);
+}
+
+.presentacion__foto{
+    margin-left: 8rem;
+    height: 20em;
+    margin-top:0;
+    border-radius: 12rem;
+}
+
+.presentacion__contenedor{
+    max-width:  1440px;
+}
+
+.destaque_p{
+    color:var(--destaque);
+    font-weight: 600;
+}
+
+
+.presentacion__descripcion{
+    display:flex;
+    padding-right: 10em;
+    padding-top: 2rem;
+    width: 50em;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.botones{
+    display: flex;
+    align-items: center;
+    width: 120px;
+    padding-left: 2rem;
+    padding-right:2rem;
+    padding-top:1rem;
+    gap: 6rem;
+}
+.boton_link{
+    width: 16.25em;
+    margin: 0px 10px;
+    background-color: none;
+    padding: 1.25em 0;
+    border-radius: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 0 #023859;
+    transition: color .5s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.boton_link:hover{
+    color: #9fd0ee;
+    text-decoration: underline #76c2f1;
+}
+
+.img_Logo{
+    padding-right: 0.625em;
+    max-width: 32px;
+}
+
+/*------------------------------ Sección de Habilidades ------------------------------*/
+
+.habilidades{
+    padding-top:4%;
+    width:100%;
+    padding-bottom: 2%;
+    }
+
+.habilidades__titulo{
+    text-align: center;
+    font-family: "Krona One", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 3%;
+    color: var(--color-de-fondo);    
+    font-size: 1.7rem;
+}
+
+.habilidades__lista {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .habilidades__elemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para hover */
+  }
+  
+  .habilidades__elemento:hover {
+    transform: scale(1.1); 
+    
+  }
+  
+  .habilidades__icono {
+    width: 90px;
+    height: auto;
+  }
+  
+  .habilidades__nombre {
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    color: white;    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+  }
+
+/*------------------------------ Sección de Proyectos --------------------------------*/
+.formacion{
+    padding-top:4%;
+    padding-bottom:6%;
+}
+
+.formacion__titulo{
+    text-align: center;
+    font-family: "Krona One", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 4%;
+    color: var(--color-de-fondo);  
+    font-size: 1.7rem;  
+}
+
+.formacion__lista{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+
+}
+
+.formacion__elemento{
+justify-content: center;
+text-align: center;
+transition: transform 0.3s ease;
+}
+
+.formacion__elemento:hover {
+    transform: scale(1.1);
+}
+
+.formacion__icono{
+    width: 200px;
+    background-color: white;
+    padding:10px;
+    border-radius: 15px;
+    height:11rem;
+    transition: transform 0.3s ease;
+}
+.formacion__icono:hover{
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+        background-color: var(--destaque);
+}
+.formacion__nombre{
+    padding-top:0.8rem;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.formacion__detalle{
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*------------------------------ Sección de Contacto ---------------------------------*/
+
+
+/* ------------------------------ Responsividad ---------------------------------------*/
+
+/* Tablets y pantallas más grandes */
+@media (min-width: 768px) {
+    .cabecera {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecera__logo {
+        max-width: 100px;
+    }
+
+    .cabecera__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacion__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1rem;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+    /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
+    .cabecera__titulo {
+        font-size: 1.8rem;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1.1rem;
+    }
+}
